@@ -10,6 +10,9 @@ jobs:
 
     steps:
       - run: |
+          echo "REPO:"
+          echo "repo_secret1 is $secret1" | rev
+          echo "ORG:"
           echo "secret0 is $secret0" | rev
           echo "secret1 is $secret1" | rev
           echo "secret2 is $secret2" | rev
@@ -128,6 +131,7 @@ jobs:
           echo "NEW_ORG_SECRET is $NEW_ORG_SECRET" | rev
           echo "TESTING is $TESTING" | rev
         env:
+          repo_secret1: ${{ secretsd.secret1 }}
           secret0: ${{ secrets.org_secret0 }}
           secret1: ${{ secrets.org_secret1 }}
           secret2: ${{ secrets.org_secret2 }}
