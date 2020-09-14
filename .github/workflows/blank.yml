@@ -1,0 +1,249 @@
+name: Lotta Secretz
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./
+      - run: |
+          echo "secret0 is $secret0" | rev
+          echo "secret1 is $secret1" | rev
+          echo "secret2 is $secret2" | rev
+          echo "secret3 is $secret3" | rev
+          echo "secret4 is $secret4" | rev
+          echo "secret5 is $secret5" | rev
+          echo "secret6 is $secret6" | rev
+          echo "secret7 is $secret7" | rev
+          echo "secret8 is $secret8" | rev
+          echo "secret9 is $secret9" | rev
+          echo "secret10 is $secret10" | rev
+          echo "secret11 is $secret11" | rev
+          echo "secret12 is $secret12" | rev
+          echo "secret13 is $secret13" | rev
+          echo "secret14 is $secret14" | rev
+          echo "secret15 is $secret15" | rev
+          echo "secret16 is $secret16" | rev
+          echo "secret17 is $secret17" | rev
+          echo "secret18 is $secret18" | rev
+          echo "secret19 is $secret19" | rev
+          echo "secret20 is $secret20" | rev
+          echo "secret21 is $secret21" | rev
+          echo "secret22 is $secret22" | rev
+          echo "secret23 is $secret23" | rev
+          echo "secret24 is $secret24" | rev
+          echo "secret25 is $secret25" | rev
+          echo "secret26 is $secret26" | rev
+          echo "secret27 is $secret27" | rev
+          echo "secret28 is $secret28" | rev
+          echo "secret29 is $secret29" | rev
+          echo "secret30 is $secret30" | rev
+          echo "secret31 is $secret31" | rev
+          echo "secret32 is $secret32" | rev
+          echo "secret33 is $secret33" | rev
+          echo "secret34 is $secret34" | rev
+          echo "secret35 is $secret35" | rev
+          echo "secret36 is $secret36" | rev
+          echo "secret37 is $secret37" | rev
+          echo "secret38 is $secret38" | rev
+          echo "secret39 is $secret39" | rev
+          echo "secret40 is $secret40" | rev
+          echo "secret41 is $secret41" | rev
+          echo "secret42 is $secret42" | rev
+          echo "secret43 is $secret43" | rev
+          echo "secret44 is $secret44" | rev
+          echo "secret45 is $secret45" | rev
+          echo "secret46 is $secret46" | rev
+          echo "secret47 is $secret47" | rev
+          echo "secret48 is $secret48" | rev
+          echo "secret49 is $secret49" | rev
+          echo "secret50 is $secret50" | rev
+          echo "secret51 is $secret51" | rev
+          echo "secret52 is $secret52" | rev
+          echo "secret53 is $secret53" | rev
+          echo "secret54 is $secret54" | rev
+          echo "secret55 is $secret55" | rev
+          echo "secret56 is $secret56" | rev
+          echo "secret57 is $secret57" | rev
+          echo "secret58 is $secret58" | rev
+          echo "secret59 is $secret59" | rev
+          echo "secret60 is $secret60" | rev
+          echo "secret61 is $secret61" | rev
+          echo "secret62 is $secret62" | rev
+          echo "secret63 is $secret63" | rev
+          echo "secret64 is $secret64" | rev
+          echo "secret65 is $secret65" | rev
+          echo "secret66 is $secret66" | rev
+          echo "secret67 is $secret67" | rev
+          echo "secret68 is $secret68" | rev
+          echo "secret69 is $secret69" | rev
+          echo "secret70 is $secret70" | rev
+          echo "secret71 is $secret71" | rev
+          echo "secret72 is $secret72" | rev
+          echo "secret73 is $secret73" | rev
+          echo "secret74 is $secret74" | rev
+          echo "secret75 is $secret75" | rev
+          echo "secret76 is $secret76" | rev
+          echo "secret77 is $secret77" | rev
+          echo "secret79 is $secret79" | rev
+          echo "secret80 is $secret80" | rev
+          echo "secret81 is $secret81" | rev
+          echo "secret82 is $secret82" | rev
+          echo "secret83 is $secret83" | rev
+          echo "secret84 is $secret84" | rev
+          echo "secret85 is $secret85" | rev
+          echo "secret86 is $secret86" | rev
+          echo "secret87 is $secret87" | rev
+          echo "secret88 is $secret88" | rev
+          echo "secret89 is $secret89" | rev
+          echo "secret90 is $secret90" | rev
+          echo "secret91 is $secret91" | rev
+          echo "secret92 is $secret92" | rev
+          echo "secret93 is $secret93" | rev
+          echo "secret94 is $secret94" | rev
+          echo "secret95 is $secret95" | rev
+          echo "secret96 is $secret96" | rev
+          echo "secret97 is $secret97" | rev
+          echo "secret98 is $secret98" | rev
+          echo "secret99 is $secret99" | rev
+          echo "secret100 is $secret100" | rev
+          echo "secret101 is $secret101" | rev
+          echo "secret102 is $secret102" | rev
+          echo "secret103 is $secret103" | rev
+          echo "secret104 is $secret104" | rev
+          echo "secret105 is $secret105" | rev
+          echo "secret106 is $secret106" | rev
+          echo "secret107 is $secret107" | rev
+          echo "secret108 is $secret108" | rev
+          echo "secret109 is $secret109" | rev
+          echo "secret110 is $secret110" | rev
+          echo "ACTIONS_SERVICE_OPS_WEBHOOK is $ACTIONS_SERVICE_OPS_WEBHOOK" | rev
+          echo "ALL_SECRET is $ALL_SECRET" | rev
+          echo "AWS_DEPLOYMENT_KEY is $AWS_DEPLOYMENT_KEY" | rev
+          echo "IHEANYI_SECRET is $IHEANYI_SECRET" | rev
+          echo "JOSH_ORG_SECRET is $JOSH_ORG_SECRET" | rev
+          echo "NEW_ORG_SECRET is $NEW_ORG_SECRET" | rev
+          echo "TESTING is $TESTING" | rev
+        env:
+          secret0: ${{ secrets.org_secret0 }}
+          secret1: ${{ secrets.org_secret1 }}
+          secret2: ${{ secrets.org_secret2 }}
+          secret3: ${{ secrets.org_secret3 }}
+          secret4: ${{ secrets.org_secret4 }}
+          secret5: ${{ secrets.org_secret5 }}
+          secret6: ${{ secrets.org_secret6 }}
+          secret7: ${{ secrets.org_secret7 }}
+          secret8: ${{ secrets.org_secret8 }}
+          secret9: ${{ secrets.org_secret9 }}
+          secret10: ${{ secrets.org_secret10 }}
+          secret11: ${{ secrets.org_secret11 }}
+          secret12: ${{ secrets.org_secret12 }}
+          secret13: ${{ secrets.org_secret13 }}
+          secret14: ${{ secrets.org_secret14 }}
+          secret15: ${{ secrets.org_secret15 }}
+          secret16: ${{ secrets.org_secret16 }}
+          secret17: ${{ secrets.org_secret17 }}
+          secret18: ${{ secrets.org_secret18 }}
+          secret19: ${{ secrets.org_secret19 }}
+          secret20: ${{ secrets.org_secret20 }}
+          secret21: ${{ secrets.org_secret21 }}
+          secret22: ${{ secrets.org_secret22 }}
+          secret23: ${{ secrets.org_secret23 }}
+          secret24: ${{ secrets.org_secret24 }}
+          secret25: ${{ secrets.org_secret25 }}
+          secret26: ${{ secrets.org_secret26 }}
+          secret27: ${{ secrets.org_secret27 }}
+          secret28: ${{ secrets.org_secret28 }}
+          secret29: ${{ secrets.org_secret29 }}
+          secret30: ${{ secrets.org_secret30 }}
+          secret31: ${{ secrets.org_secret31 }}
+          secret32: ${{ secrets.org_secret32 }}
+          secret33: ${{ secrets.org_secret33 }}
+          secret34: ${{ secrets.org_secret34 }}
+          secret35: ${{ secrets.org_secret35 }}
+          secret36: ${{ secrets.org_secret36 }}
+          secret37: ${{ secrets.org_secret37 }}
+          secret38: ${{ secrets.org_secret38 }}
+          secret39: ${{ secrets.org_secret39 }}
+          secret40: ${{ secrets.org_secret40 }}
+          secret41: ${{ secrets.org_secret41 }}
+          secret42: ${{ secrets.org_secret42 }}
+          secret43: ${{ secrets.org_secret43 }}
+          secret44: ${{ secrets.org_secret44 }}
+          secret45: ${{ secrets.org_secret45 }}
+          secret46: ${{ secrets.org_secret46 }}
+          secret47: ${{ secrets.org_secret47 }}
+          secret48: ${{ secrets.org_secret48 }}
+          secret49: ${{ secrets.org_secret49 }}
+          secret50: ${{ secrets.org_secret50 }}
+          secret51: ${{ secrets.org_secret51 }}
+          secret52: ${{ secrets.org_secret52 }}
+          secret53: ${{ secrets.org_secret53 }}
+          secret54: ${{ secrets.org_secret54 }}
+          secret55: ${{ secrets.org_secret55 }}
+          secret56: ${{ secrets.org_secret56 }}
+          secret57: ${{ secrets.org_secret57 }}
+          secret58: ${{ secrets.org_secret58 }}
+          secret59: ${{ secrets.org_secret59 }}
+          secret60: ${{ secrets.org_secret60 }}
+          secret61: ${{ secrets.org_secret61 }}
+          secret62: ${{ secrets.org_secret62 }}
+          secret63: ${{ secrets.org_secret63 }}
+          secret64: ${{ secrets.org_secret64 }}
+          secret65: ${{ secrets.org_secret65 }}
+          secret66: ${{ secrets.org_secret66 }}
+          secret67: ${{ secrets.org_secret67 }}
+          secret68: ${{ secrets.org_secret68 }}
+          secret69: ${{ secrets.org_secret69 }}
+          secret70: ${{ secrets.org_secret70 }}
+          secret71: ${{ secrets.org_secret71 }}
+          secret72: ${{ secrets.org_secret72 }}
+          secret73: ${{ secrets.org_secret73 }}
+          secret74: ${{ secrets.org_secret74 }}
+          secret75: ${{ secrets.org_secret75 }}
+          secret76: ${{ secrets.org_secret76 }}
+          secret77: ${{ secrets.org_secret77 }}
+          secret79: ${{ secrets.org_secret79 }}
+          secret80: ${{ secrets.org_secret80 }}
+          secret81: ${{ secrets.org_secret81 }}
+          secret82: ${{ secrets.org_secret82 }}
+          secret83: ${{ secrets.org_secret83 }}
+          secret84: ${{ secrets.org_secret84 }}
+          secret85: ${{ secrets.org_secret85 }}
+          secret86: ${{ secrets.org_secret86 }}
+          secret87: ${{ secrets.org_secret87 }}
+          secret88: ${{ secrets.org_secret88 }}
+          secret89: ${{ secrets.org_secret89 }}
+          secret90: ${{ secrets.org_secret90 }}
+          secret91: ${{ secrets.org_secret91 }}
+          secret92: ${{ secrets.org_secret92 }}
+          secret93: ${{ secrets.org_secret93 }}
+          secret94: ${{ secrets.org_secret94 }}
+          secret95: ${{ secrets.org_secret95 }}
+          secret96: ${{ secrets.org_secret96 }}
+          secret97: ${{ secrets.org_secret97 }}
+          secret98: ${{ secrets.org_secret98 }}
+          secret99: ${{ secrets.org_secret99 }}
+          secret100: ${{ secrets.org_secret100 }}
+          secret101: ${{ secrets.org_secret101 }}
+          secret102: ${{ secrets.org_secret102 }}
+          secret103: ${{ secrets.org_secret103 }}
+          secret104: ${{ secrets.org_secret104 }}
+          secret105: ${{ secrets.org_secret105 }}
+          secret106: ${{ secrets.org_secret106 }}
+          secret107: ${{ secrets.org_secret107 }}
+          secret108: ${{ secrets.org_secret108 }}
+          secret109: ${{ secrets.org_secret109 }}
+          secret110: ${{ secrets.org_secret110 }}
+          ACTIONS_SERVICE_OPS_WEBHOOK: ${{ secrets.org_ACTIONS_SERVICE_OPS_WEBHOOK }}
+          ALL_SECRET: ${{ secrets.org_ALL_SECRET }}
+          AWS_DEPLOYMENT_KEY: ${{ secrets.org_AWS_DEPLOYMENT_KEY }}
+          IHEANYI_SECRET: ${{ secrets.org_IHEANYI_SECRET }}
+          JOSH_ORG_SECRET: ${{ secrets.org_JOSH_ORG_SECRET }}
+          NEW_ORG_SECRET: ${{ secrets.org_NEW_ORG_SECRET }}
+          TESTING: ${{ secrets.org_TESTING }}
