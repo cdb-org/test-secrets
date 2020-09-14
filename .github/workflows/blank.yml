@@ -131,7 +131,7 @@ jobs:
           echo "NEW_ORG_SECRET is $NEW_ORG_SECRET" | rev
           echo "TESTING is $TESTING" | rev
         env:
-          repo_secret1: ${{ secretsd.secret1 }}
+          repo_secret1: ${{ secrets.secret1 }}
           secret0: ${{ secrets.org_secret0 }}
           secret1: ${{ secrets.org_secret1 }}
           secret2: ${{ secrets.org_secret2 }}
