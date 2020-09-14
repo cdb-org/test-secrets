@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
-      - uses: ./
       - run: |
           echo "secret0 is $secret0" | rev
           echo "secret1 is $secret1" | rev
